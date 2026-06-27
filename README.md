@@ -64,6 +64,7 @@ AutoProvision solves all of this through automated, event-driven integrations.
 - ✅ Complete audit trail (Audit Logs with timestamps)
 - ✅ Idempotency checks (cannot onboard/offboard same employee twice)
 - ✅ Single Responsibility Principle (validation → orchestration → notification)
+- ✅ Start date validation enforced at Google Form level (date picker restricted to future dates)
 
 ## Integration Concepts Demonstrated
 - Webhook and event-driven triggers
@@ -85,10 +86,13 @@ AutoProvision solves all of this through automated, event-driven integrations.
 ![Audit Log Entry](screenshots/onboarding/audit-log-entry.png)
 
 ### Failed Validation
-![Invalid Email](screenshots/failed-validation/invalid-email.png)
-![Invalid Employee ID](screenshots/failed-validation/invalid-employee-id.png)
-![Past Start Date](screenshots/failed-validation/past-start-date.png)
-![Failed Logs Sheet](screenshots/failed-validation/failed-logs-sheet.png)
+![Invalid Email - Workato Job](screenshots/failed-validation/invalid-email-workato.png)
+![Invalid Email - Failed Log](screenshots/failed-validation/invalid-email-failed-log.png)
+![Invalid Employee ID - Workato Job](screenshots/failed-validation/invalid-empid-workato.png)
+![Invalid Employee ID - Failed Log](screenshots/failed-validation/invalid-empid-failed-log.png)
+![Invalid Manager Email - Workato Job](screenshots/failed-validation/invalid-manager-email-workato.png)
+![Invalid Manager Email - Failed Log](screenshots/failed-validation/invalid-manager-email-failed-log.png)
+![Failed Logs Sheet - All Records](screenshots/failed-validation/failed-logs-sheet.png)
 
 ### Duplicate Detection
 ![Duplicate Detected](screenshots/duplicate/duplicate-detected.png)
