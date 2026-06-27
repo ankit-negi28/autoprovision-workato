@@ -1,0 +1,9 @@
+{
+  "employee_id": "EMP-3001",
+  "full_name": "Priya Kapoor",
+  "email": "priya.kapoor@company.com",
+  "department": "Product",
+  "role": "Product Manager",
+  "start_date": "2026-07-15",
+  "manager_email": "manager@company.com"
+}
