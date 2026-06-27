@@ -12,6 +12,12 @@ HR teams manually provision and deprovision employee access across multiple syst
 
 AutoProvision solves all of this through automated, event-driven integrations.
 
+## Live Demo
+| Form | Link |
+|---|---|
+| Employee Onboarding Request | [Submit Onboarding Form](https://forms.gle/zKnX7eAf83qKgWZy9) |
+| Employee Offboarding Request | [Submit Offboarding Form](https://forms.gle/MdipbWiaMZzE7FDGA) |
+
 ## Architecture
 ![Architecture Diagram](screenshots/architecture/architecture-diagram.png)
 
@@ -19,12 +25,12 @@ AutoProvision solves all of this through automated, event-driven integrations.
 ### Onboarding
 1. HR submits Google Form
 2. Real-time trigger fires Workato Recipe 1
-3. Multi-layer validation (mandatory fields + format checks)
+3. Multi-layer validation (mandatory fields + regex format checks)
 4. Duplicate detection (Employee ID + Email)
 5. Jira onboarding ticket created
 6. Welcome email sent to employee + manager
 7. Slack notification posted to #autoprovision-alerts
-8. Record logged to Audit Log
+8. Record logged to Audit Logs
 
 ### Offboarding
 1. HR submits Offboarding Google Form
@@ -91,6 +97,10 @@ AutoProvision solves all of this through automated, event-driven integrations.
 
 ## Screenshots
 
+### Google Forms (Triggers)
+![Onboarding Form](screenshots/onboarding/onboarding-form.png)
+![Offboarding Form](screenshots/offboarding/offboarding-form.png)
+
 ### Onboarding — Happy Path
 ![Workato Job Success](screenshots/onboarding/workato-job-success.png)
 ![Jira Ticket Created](screenshots/onboarding/jira-ticket.png)
@@ -118,6 +128,11 @@ AutoProvision solves all of this through automated, event-driven integrations.
 ![Gmail Manager Notification](screenshots/offboarding/gmail-manager-notification.png)
 ![Slack Offboarding Alert](screenshots/offboarding/slack-notification.png)
 ![Audit Log Updated](screenshots/offboarding/audit-log-updated.png)
+
+### Offboarding — Failed Cases
+![Employee Not Found](screenshots/failed-validation/offboarding-not-found-workato.png)
+![Already Offboarded](screenshots/failed-validation/offboarding-already-offboarded-workato.png)
+![Offboarding Failed Logs](screenshots/failed-validation/offboarding-failed-logs-sheet.png)
 
 ### Recipe Structure
 ![Recipe 1 Build View](screenshots/architecture/recipe-1-build.png)
