@@ -142,6 +142,3 @@ AutoProvision solves all of this through automated, event-driven integrations.
 
 ## Sample Payloads
 See [sample-payloads/](sample-payloads/) folder for onboarding and offboarding JSON payloads.
-
-## Resume Description
-Built **AutoProvision**, an enterprise employee lifecycle automation platform on Workato integrating Google Forms, Jira, Gmail, Slack, and Google Sheets to automate onboarding and offboarding workflows with multi-layer validation, duplicate detection with threshold alerting, centralized notification handling via callable recipes, and comprehensive audit logging following dead letter queue and idempotency patterns.
